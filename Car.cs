@@ -19,7 +19,14 @@ namespace myconsole
             MaxSpeed = maxSpeed;
         }
 
-        public void TurnLeft() { IncreasePadding(false); }
+        public void TurnLeft()
+        {
+            IncreasePadding(false);
+        }
+        public void TurnRight()
+        {
+            IncreasePadding(true);
+        }
 
         private void IncreasePadding(bool isIncrease)
         {
@@ -33,7 +40,7 @@ namespace myconsole
             Print();
         }
 
-        public void TurnRight() { IncreasePadding(true); }
+
         public void MoveForward()
         {
             if (currentSpeed > MaxSpeed)
