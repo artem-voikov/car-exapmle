@@ -22,7 +22,7 @@ namespace myconsole
         public void TurnLeft()
         {
             IncreasePadding(false);
-        }
+        }  
         public void TurnRight()
         {
             IncreasePadding(true);
